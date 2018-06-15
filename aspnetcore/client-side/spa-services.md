@@ -20,7 +20,7 @@ ms.lasthandoff: 04/18/2018
 
 Por [Scott Addie](https://github.com/scottaddie) y [Fiyaz Hasan](http://fiyazhasan.me/)
 
-Una aplicación de página única (SPA) es un tipo conocido de aplicación web debido a su experiencia de usuario enriquecida inherente. Integración de cliente marcos SPA o bibliotecas, como [Angular](https://angular.io/) o [reaccionar](https://facebook.github.io/react/), con marcos de trabajo de servidor como ASP.NET Core puede ser difícil. [JavaScriptServices](https://github.com/aspnet/JavaScriptServices) se desarrolló para reducir la fricción en el proceso de integración. Permite la operación sin problemas entre los distintos clientes y pilas de tecnología de servidor.
+Una aplicación de página única (SPA) es un tipo conocido de aplicación web debido a su experiencia de usuario enriquecida inherente. Integración de cliente marcos SPA o bibliotecas, como [Angular](https://angular.io/) o [React](https://facebook.github.io/react/), con un Framework de servidor como ASP.NET Core puede ser difícil. [JavaScriptServices](https://github.com/aspnet/JavaScriptServices) se desarrolló para reducir la fricción en el proceso de integración. Permite la operación sin problemas entre los distintos clientes y pilas de tecnología de servidor.
 
 [Vea o descargue el código de ejemplo](https://github.com/aspnet/Docs/tree/master/aspnetcore/client-side/spa-services/sample) ([cómo descargarlo](xref:tutorials/index#how-to-download-a-sample))
 
@@ -37,7 +37,7 @@ JavaScriptServices consta de tres paquetes de NuGet distintos:
 
 Estos paquetes son útiles si se:
 * Ejecutar JavaScript en el servidor
-* Usar un marco de SPA o biblioteca
+* Usar un Framework de SPA o biblioteca
 * Compilar recursos de lado cliente con Webpack
 
 Gran parte de la atención en este artículo se coloca sobre cómo usar el paquete SpaServices.
@@ -46,7 +46,7 @@ Gran parte de la atención en este artículo se coloca sobre cómo usar el paque
 
 ## <a name="what-is-spaservices"></a>¿Qué es SpaServices?
 
-Se creó para colocar ASP.NET Core como plataforma de servidor preferido de los desarrolladores para compilar SPAs SpaServices. SpaServices no es necesario desarrollar SPAs con ASP.NET Core, y no bloquea en un marco de trabajo de cliente en particular.
+Se creó para colocar ASP.NET Core como plataforma de servidor preferido de los desarrolladores para compilar SPAs SpaServices. SpaServices no es necesario desarrollar SPAs con ASP.NET Core, y no bloquea en un Framework de cliente en particular.
 
 SpaServices ofrece una infraestructura útil como:
 * [Procesamiento previo de servidor](#server-prerendering)
@@ -80,9 +80,9 @@ Nota: Si va a implementar en un sitio web de Azure, no es necesario hacer nada a
 
 ## <a name="server-side-prerendering"></a>Procesamiento previo de servidor
 
-Una aplicación universal (también conocido como mismo formato) es una aplicación de JavaScript capaz de ejecutar tanto en el servidor y el cliente. Angular, reaccionar y otros entornos populares proporciona una plataforma universal de este estilo de desarrollo de aplicaciones. La idea es representar primero los componentes de framework en el servidor a través de Node.js y, a continuación, más delegar la ejecución al cliente.
+Una aplicación universal (también conocido como mismo formato) es una aplicación de JavaScript capaz de ejecutar tanto en el servidor y el cliente. Angular, React y otros entornos populares proporciona una plataforma universal de este estilo de desarrollo de aplicaciones. La idea es representar primero los componentes de Framework en el servidor a través de Node.js y, a continuación, más delegar la ejecución al cliente.
 
-ASP.NET Core [aplicaciones auxiliares de etiquetas](xref:mvc/views/tag-helpers/intro) proporcionada por SpaServices simplificar la implementación de procesamiento previo de servidor mediante la invocación de las funciones de JavaScript en el servidor.
+ASP.NET Core [aplicaciones auxiliares de etiquetas](xref:mvc/views/tag-helpers/intro) proporcionada por SpaServices simplifica la implementación de procesamiento previo de servidor mediante la invocación de las funciones de JavaScript en el servidor.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
@@ -226,7 +226,7 @@ Sugerencia: Las rutas se evalúan en el orden en el que está configurados. Por 
 
 ## <a name="creating-a-new-project"></a>Crear un nuevo proyecto
 
-JavaScriptServices proporciona plantillas de aplicaciones configuradas previamente. SpaServices se utiliza en estas plantillas, junto con una diversidad de marcos y bibliotecas como Angular, reaccionar y Redux.
+JavaScriptServices proporciona plantillas de aplicaciones configuradas previamente. SpaServices se utiliza en estas plantillas, junto con una diversidad de marcos y bibliotecas como Angular, React y Redux.
 
 Estas plantillas se pueden instalar a través de la CLI de núcleo de .NET con el comando siguiente:
 
